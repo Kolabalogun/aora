@@ -40,6 +40,8 @@ export const GlobalProvider: React.FC<GlobalProviderProps> = ({ children }) => {
   const [user, setUser] = useState<any>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
+  console.log(user);
+
   useEffect(() => {
     getCurrentUser()
       .then((user) => {
